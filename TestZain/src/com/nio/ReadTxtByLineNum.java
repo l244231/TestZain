@@ -35,9 +35,6 @@ public class ReadTxtByLineNum {
 			MappedByteBuffer mbb = fc.map(FileChannel.MapMode.READ_ONLY, 0, length);
 			ByteBuffer buffer = ByteBuffer.allocate(length);
 			int readCount;
-			for(0!=(readCount = )){
-				
-			}
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
