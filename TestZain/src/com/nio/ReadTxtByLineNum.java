@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.nio.ByteBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
@@ -21,7 +22,7 @@ import java.nio.channels.FileChannel;
  * Id:ReadTxtByLineNum.java,v1.0 2016年10月24日 下午4:50:57
  */
 public class ReadTxtByLineNum {
-	private static int length = 1024*10;
+	private static int length = 1024*1024*10;
 	public static void main(String[] args) {
 		
 	}
@@ -32,9 +33,9 @@ public class ReadTxtByLineNum {
 		try {
 			FileChannel fc = new RandomAccessFile(file, "r").getChannel();
 			MappedByteBuffer mbb = fc.map(FileChannel.MapMode.READ_ONLY, 0, length);
-			byte[] dst = new byte[length];
-			
-			for(int i=0;i<file.length();i+= length){
+			ByteBuffer buffer = ByteBuffer.allocate(length);
+			int readCount;
+			for(0!=(readCount = )){
 				
 			}
 			
