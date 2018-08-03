@@ -20,7 +20,7 @@ public class TestBiaInterface {
 		String url = "http://127.0.0.1:8080/mtrs/app/bia/interfaceEntrance.do";
 		String data = "{\"corpId\":\"FDBX\",\"productType\":\"FlightDomestic\",\"orderId\":\"5134696329\",\"orderStatus\":\"Cancelled\",\"sign\":\"5F6BE268531665034528B536E14109FAAA57DF2C\"}";
 		String params = "<?xml version=\"1.0\" encoding=\"GBK\"?><REQUEST>	<TRAN_CODE>StatePush</TRAN_CODE>		<PARTNER_ID>mtrs_ctrip</PARTNER_ID>	<BUSINESS_NO>5130828186</BUSINESS_NO>	<data>"+data+"</data></REQUEST>";
-		String result = HttpRequest.sendPost(url, params);
+		String result = HttpRequest.sendPost(url, params,"UTF-8");
 		System.out.println(result);
 	}
 }

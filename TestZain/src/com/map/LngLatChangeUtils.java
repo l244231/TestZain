@@ -13,7 +13,7 @@ package com.map;
  * 				2018年7月26日 zixian.luo001 create file<br>
  *              Id:Test.java,v1.0 2018年7月26日 下午5:35:58
  */
-public class Test {
+public class LngLatChangeUtils {
 
 	public static void main(String[] args) {
 		map_tx2bd(22.5458621796082400d, 114.0634489059449900d);

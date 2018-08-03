@@ -24,6 +24,8 @@ import java.util.Map;
  *              Id:HttpRequest.java,v1.0 2017年8月22日 下午2:05:17
  */
 public class HttpRequest {
+	
+	
 	/**
 	 * 向指定URL发送GET方法的请求
 	 * 
